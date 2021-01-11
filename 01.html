@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.box1 li{
+			
+			border: 1px yellow solid;
+			width: 100px;
+			height: 50px;
+			color: #000;
+			line-height: 50px;
+			/*text-align: center;*/
+			background-color: cyan;
+			font-size: 20px;
+			margin-left: 30px;
+			display:inline;
+		}
+		li:hover{
+			background-color: #000;
+			color: red;
+		}
+		ul{
+			
+		}
+		.box1{
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			background-color: gray;
+		}
+		.box2{
+			border: 1px solid;
+			width: 100%;
+			height: 500px;
+			color: #000;
+		}
+		.left{
+			border: 1px solid;
+			width: 20%;
+			height: 500px;
+			color: red;
+			float: left;
+			background-image: url(1.jpg);
+			background-size: 100% 100%;
+		}
+
+		.cen{
+			float: left;
+			width: 60%;
+			height: 500px;
+			border: 1px solid yellow;
+			background-color: gray;
+		}
+		.cen td,.cen b{
+			text-align: center
+		}
+		.right{
+			float: right;
+			border: 1px solid blue;
+			width: 19.6%;
+			height: 500px;
+			background-image: url(2.jpg);
+			background-size: 100% 100%;
+		}
+		.last{
+			width: 100%;
+			height: 160px;
+			border: 1px solid red;
+			background-color: pink;
+		}
+		.last1,.last2,.last3,.last4{
+			width: 20%;
+			height: 160px;
+			float: left;
+		}
+		.last5{
+			width: 20%;
+			height: 160px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+	<ul>
+		<li>欧美电影</li>
+		<li>日本动漫</li>
+		<li>美国大片</li>
+		<li>韩国偶像剧</li>
+		<li>抗战神剧</li>
+		<li>速度与激情</li>
+	</ul>
+	</div>
+	<div class="box2">
+		<div class="left">
+			
+		</div>
+		<div class="cen">
+			<table border="1" cellpadding="10" cellspacing="0" width="100%" height="500" align="center" valign="middle">
+				<tr>
+					<th>电影排行榜</th>
+				</tr>
+				<tr>
+					<th>年度排名</th>
+					<th>历史排名</th>
+					<th>电影名称</th>
+					<th>总票房</th>
+					<th>总人次</th>
+					<th>上映年份</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>战狼2</td>
+					<td>56.39亿</td>
+					<td>--</td>
+					<td>2017</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>哪吒之魔童降世</td>
+					<td>49.34亿</td>
+					<td>--</td>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>3</td>
+					<td>流浪地球</td>
+					<td>46.18亿</td>
+					<td>--</td>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+					<td>复仇者联盟4：终局之战</td>
+					<td>42.05亿</td>
+					<td>--</td>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+					<td>复仇者联盟4：终局之战</td>
+					<td>42.05亿</td>
+					<td>--</td>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+					<td>复仇者联盟4：终局之战</td>
+					<td>42.05亿</td>
+					<td>--</td>
+					<td>2019</td>
+				</tr>
+			</table>
+		</div>
+		<div class="right">
+			
+		</div>
+	</div>
+	<div class="last">
+		<div class="last1">
+			<p>form标签</p><br/><br/>
+			<form action="" id=""></form>
+			邮箱：<input type="email" name="form1"/><br/>
+			密码：<input type="password" name="form2"/><br/>
+		</div>
+		<div class="last2">
+			<p>list属性</p><br/><br/>
+			<input type="text" list="province" form="form1"/>
+			<datalist id="province">
+				<option value="四川成都"></option>
+				<option value="广州深圳"></option>
+				<option value=" 北京海淀"></option>
+			</datalist>
+			
+		<div class="last3">
+			<p>pattern属性</p><br/><br/>
+			<form action="" >
+   				 国家代码：<input type="text" name="country_code" pattern="[A-z]{3}"  title="三个字母的国家代码" /><br/>                
+   			<input type="submit" />
+			</form>
+		</div>
+		<div class="last4">
+			<p>placeholder标签</p><br><br>
+			<!-- <p>描述：输入域为空时显示placeholder的内容，当输入域获得焦点时内容消失</p> -->
+			 姓名：<input type="text" placeholder="请输入名字">
+		</div>
+		<div class="last5">
+			<p>required属系</p><br><br>
+			<form action="">
+   			 姓名：<input type="text" placeholder="请输入姓名" required/><br/>
+   			 <input type="reset" name=""/>
+    		<input type="submit"/>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
